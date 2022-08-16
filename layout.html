@@ -1,0 +1,19 @@
+To Do List
+
+<form method="post">
+    {{form.hidden_tag()}}
+    {{form.task.label()}} {{form.task()}}
+    {{form.add()}}
+</form>
+<ul>
+    {% for task in tasks %}
+        <li>
+            {{task}}
+        </li>
+
+    {% endfor %}
+
+
+</ul>
+
+
